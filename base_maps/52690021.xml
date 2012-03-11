@@ -1,8 +1,8 @@
 <!-- 
 GoldenEvo.com Definition File 
- by Michael Golden 
+by Michael Golden 
 
- donations at golden@goldenevo.com 
+donations at golden@goldenevo.com 
 -->
 <rom>
   <romid>
@@ -1102,6 +1102,48 @@ GoldenEvo.com Definition File
       <data>MUT1BX</data>
       <data>MUT1CX</data>
       <data>MUT1DX</data>
+    </table>
+  </table>
+
+  <table name="Non-Continuous Monitor Availability Patch - Part 1" category="OBD Inspection" address="8FE38" type="2D" level="1" scaling="Hex16">
+    <table type="Static Y Axis" elements="2">
+      <data>A1BD->6100</data> 
+      <data>CF94->7000</data> 
+    </table>
+  </table>
+  <table name="Non-Continuous Monitor Availability Patch - Part 2" category="OBD Inspection" address="8FE3E" type="2D" level="1" scaling="Hex16">
+    <table type="Static Y Axis" elements="1">
+      <data>01E2->7000</data> 
+    </table>
+  </table>
+  <table name="Non-Continuous Monitor Completion Patch" category="OBD Inspection" address="8FEA4" type="2D" level="1" scaling="Hex16">
+    <table type="Static Y Axis" elements="2">
+      <data>A0BD->60FF</data> 
+      <data>877A->7000</data> 
+    </table>
+  </table>
+  <table name="Monitor Available(1)/Not Available(0)" category="OBD Inspection" address="8FE39" type="2D" level="2" scaling="blobbits">
+    <table name="Non-Continuous Monitor Availability Bits" type="Static Y Axis" flipy="true" elements="8">
+      <data>EGR system</data> 
+      <data>Oxygen heater sensor</data> 
+      <data>Oxygen sensor</data> 
+      <data>A/C system refrigerant</data> 
+      <data>Secondary air system</data> 
+      <data>Evaporative system</data> 
+      <data>Heated catalyst</data> 
+      <data>Catalyst</data> 
+    </table>
+  </table>
+  <table name="Monitor Passed(1)/Failed(0)" category="OBD Inspection" address="8FEA5" type="2D" level="2" scaling="blobbits">
+    <table name="Non-Continuous Monitor Completion Bits" type="Static Y Axis" flipy="true" elements="8">
+      <data>EGR system</data> 
+      <data>Oxygen heater sensor</data> 
+      <data>Oxygen sensor</data> 
+      <data>A/C system refrigerant</data> 
+      <data>Secondary air system</data> 
+      <data>Evaporative system</data> 
+      <data>Heated catalyst</data> 
+      <data>Catalyst</data> 
     </table>
   </table>
 
