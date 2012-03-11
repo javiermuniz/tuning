@@ -1,24 +1,17 @@
-SST Development
+Tuning Info
 ===========
 
-Installation
+Introduction
 -------------
 
-### EcuFlash
-These tables and methods require EcuFlash (http://www.tactrix.com/index.php?option=com_content&view=category&layout=blog&id=36&Itemid=58).
+### Purpose & Credits
+This github repo and wiki are for the purpose of organizing information that I have dug up on various forums and through my own experimentation in tuning a high-power (~400whp) Evo X MR. Much of this information is based on the hard work of others in the Evo tuning community, particularly tephra, razorlab, gunzo, BakaUnchi (HB Speed), Beeble, sstevojr, richardh and WORKS Motorsports. Some of these people have paypal accounts, others operate businesses. If you like what you see here please consider supporting them as the info you see here would not exist without them.
 
-Get your proper base XML:
+### Warning
+I will try to maintain all information in a way that is applicable to all SST-based Evo Xs and RAs, however everything that I will be doing will be based on an Evo X MR that originally had a 52690021 ROM and has been reflashed to a TephraMOD version of the 52690022 ROM (ID 52690122). Please exercise caution if using the XML or information here and your ROM is different. Double check every stock value before you change it to ensure that the XML addresses are correct and that your scaling is accurate.
 
-Base files can be located in the base_maps directory. These are the same maps that are located on GoldenEvo's site (http://goldenevo.com/). I am simply putting them into github in order to track revision history.
+### Installation
 
-Install the XML into the EcuFlash directory:
+The fastest and easiest way to get started is to copy *all* of the basemaps into your EcuFlash metadata directory.
 
 This is usually C:\Program Files (x86)\OpenECU\EcuFlash\rommetadata\mitsubishi\evo or C:\Program Files\OpenECU\EcuFlash\rommetadata\mitsubishi\evo for 64-bit and 32-bit OSes respectively.
-
-### EcuFlash Crashing?
-
-If you have issues with EcuFlash crashing after you have copied in the proper XML and attempted to load your ROM this is usually due to a missing include XML. To figure out which include is missing, open up the XML that you downloaded and look for a line that looks like this:
-
-  <include>52690021</include>
-  
-Downloading and installing all of the base maps should fix any of these problems as well.
